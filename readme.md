@@ -80,8 +80,3 @@ Results in:
 ```
 <sup><a href='/src/Tests/Tests.AsyncRelayCommand.verified.txt#L1-L4' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.AsyncRelayCommand.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-
-
-## Icon
-
-[Mail](https://thenounproject.com/icon/mail-5633084/)  from [The Noun Project](https://thenounproject.com).
