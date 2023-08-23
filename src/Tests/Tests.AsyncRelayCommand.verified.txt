@@ -1,0 +1,4 @@
+﻿{
+  Execute: Tests.ActionMethodAsync(),
+  CanExecute: Tests.CanExecuteMethod()
+}

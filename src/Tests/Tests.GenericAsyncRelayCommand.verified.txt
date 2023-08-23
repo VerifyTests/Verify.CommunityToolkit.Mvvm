@@ -1,0 +1,4 @@
+﻿{
+  Execute: Tests.ActionMethodAsync(string obj),
+  CanExecute: Tests.CanExecuteMethod(string obj)
+}
