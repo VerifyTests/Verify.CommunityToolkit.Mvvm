@@ -1,6 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
-
-class RelayCommandConverter :
+﻿class RelayCommandConverter :
     WriteOnlyJsonConverter<IRelayCommand>
 {
     public override void Write(VerifyJsonWriter writer, IRelayCommand value)

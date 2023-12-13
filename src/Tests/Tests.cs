@@ -1,6 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class Tests
 {
     [Fact]
