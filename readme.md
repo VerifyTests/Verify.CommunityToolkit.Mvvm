@@ -37,7 +37,7 @@ public Task RelayCommand()
     return Verify(content);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L11-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-relaycommand' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L10-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-relaycommand' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in: 
@@ -65,7 +65,7 @@ public Task AsyncRelayCommand()
     return Verify(content);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L43-L52' title='Snippet source file'>snippet source</a> | <a href='#snippet-asyncrelaycommand' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-asyncrelaycommand' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in: 
