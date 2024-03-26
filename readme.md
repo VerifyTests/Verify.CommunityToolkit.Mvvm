@@ -15,20 +15,20 @@ https://nuget.org/packages/Verify.CommunityToolkit.Mvvm/
 ## Usage
 
 <!-- snippet: Enable -->
-<a id='snippet-enable'></a>
+<a id='snippet-Enable'></a>
 ```cs
 [ModuleInitializer]
 public static void Initialize() =>
     VerifyCommunityToolkitMvvm.Initialize();
 ```
-<sup><a href='/src/Tests/ModuleInitializer.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/ModuleInitializer.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Enable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
 ### RelayCommand
 
 <!-- snippet: RelayCommand -->
-<a id='snippet-relaycommand'></a>
+<a id='snippet-RelayCommand'></a>
 ```cs
 [Fact]
 public Task RelayCommand()
@@ -37,7 +37,7 @@ public Task RelayCommand()
     return Verify(content);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L10-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-relaycommand' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L10-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-RelayCommand' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in: 
@@ -56,7 +56,7 @@ Results in:
 ### AsyncRelayCommand
 
 <!-- snippet: AsyncRelayCommand -->
-<a id='snippet-asyncrelaycommand'></a>
+<a id='snippet-AsyncRelayCommand'></a>
 ```cs
 [Fact]
 public Task AsyncRelayCommand()
@@ -65,7 +65,7 @@ public Task AsyncRelayCommand()
     return Verify(content);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-asyncrelaycommand' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-AsyncRelayCommand' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in: 
