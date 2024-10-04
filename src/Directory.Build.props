@@ -4,7 +4,6 @@
     <NoWarn>CS1591;CS0649;CS8632</NoWarn>
     <Version>0.1.0</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
-    <LangVersion>12.0</LangVersion>
     <PackageTags>CommunityToolkit.Mvvm, Verify</PackageTags>
     <Description>Extends Verify (https://github.com/VerifyTests/Verify) to allow verification of CommunityToolkit.Mvvm (https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/)</Description>
     <NuGetAuditMode>all</NuGetAuditMode>
