@@ -1,4 +1,4 @@
 ﻿{
   CanExecute: Tests.CanExecuteMethod(string obj),
-  CancellableExecute: Tests.ActionMethodTokenAsync(string obj, CancellationToken token)
+  CancelableExecute: Tests.ActionMethodTokenAsync(string obj, CancellationToken token)
 }

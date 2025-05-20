@@ -1,4 +1,4 @@
 ﻿{
   CanExecute: Tests.CanExecuteMethod(),
-  CancellableExecute: Tests.ActionMethodTokenAsync(CancellationToken token)
+  CancelableExecute: Tests.ActionMethodTokenAsync(CancellationToken token)
 }

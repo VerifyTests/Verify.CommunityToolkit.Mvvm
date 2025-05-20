@@ -33,7 +33,7 @@ class AsyncRelayCommandConverter :
             if (canExecute is not null)
                 writer.WriteMember(value, canExecute.Method, "CanExecute");
             if (cancelableExecute is not null)
-                writer.WriteMember(value, cancelableExecute.Method, "CancellableExecute");
+                writer.WriteMember(value, cancelableExecute.Method, "CancelableExecute");
             writer.WriteEndObject();
         }
     }
