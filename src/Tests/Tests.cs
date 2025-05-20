@@ -51,6 +51,20 @@
     #endregion
 
     [Fact]
+    public Task AsyncRelayCommandWithCancellationTokenSimple()
+    {
+        var content = new AsyncRelayCommand(ActionMethodTokenAsync);
+        return Verify(content);
+    }
+
+    [Fact]
+    public Task AsyncRelayCommandWithCancellationToken()
+    {
+        var content = new AsyncRelayCommand(ActionMethodTokenAsync, CanExecuteMethod);
+        return Verify(content);
+    }
+
+    [Fact]
     public Task GenericAsyncRelayCommandSimple()
     {
         var content = new AsyncRelayCommand<string>(ActionMethodAsync);
@@ -61,6 +75,20 @@
     public Task GenericAsyncRelayCommand()
     {
         var content = new AsyncRelayCommand<string>(ActionMethodAsync, CanExecuteMethod);
+        return Verify(content);
+    }
+
+    [Fact]
+    public Task GenericAsyncRelayCommandWithCancellationTokenSimple()
+    {
+        var content = new AsyncRelayCommand<string>(ActionMethodTokenAsync);
+        return Verify(content);
+    }
+
+    [Fact]
+    public Task GenericAsyncRelayCommandWithCancellationToken()
+    {
+        var content = new AsyncRelayCommand<string>(ActionMethodTokenAsync, CanExecuteMethod);
         return Verify(content);
     }
 
@@ -75,6 +103,12 @@
         Task.CompletedTask;
 
     static Task ActionMethodAsync() =>
+        Task.CompletedTask;
+
+    static Task ActionMethodTokenAsync(string? obj, CancellationToken token) =>
+        Task.CompletedTask;
+
+    static Task ActionMethodTokenAsync(CancellationToken token) =>
         Task.CompletedTask;
 
     static void ActionMethod()
