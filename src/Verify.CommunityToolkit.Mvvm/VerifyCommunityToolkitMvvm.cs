@@ -16,8 +16,8 @@ public static class VerifyCommunityToolkitMvvm
         InnerVerifier.ThrowIfVerifyHasBeenRun();
         VerifierSettings.AddExtraSettings(_ =>
         {
-            _.Converters.Add(new RelayCommandConverter());
             _.Converters.Add(new AsyncRelayCommandConverter());
+            _.Converters.Add(new RelayCommandConverter());
         });
     }
 }
