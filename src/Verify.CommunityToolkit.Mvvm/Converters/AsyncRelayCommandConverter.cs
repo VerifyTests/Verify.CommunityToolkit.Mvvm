@@ -7,9 +7,9 @@ class AsyncRelayCommandConverter :
         var executeField = type.GetInstanceField("execute");
         var canExecuteField = type.GetInstanceField("canExecute");
         var cancelableExecuteField = type.GetInstanceField("cancelableExecute");
-        var execute = (Delegate?) executeField.GetValue(value);
-        var canExecute = (Delegate?) canExecuteField.GetValue(value);
-        var cancelableExecute = (Delegate?) cancelableExecuteField.GetValue(value);
+        var execute = executeField.GetMethod(value);
+        var canExecute = canExecuteField.GetMethod(value);
+        var cancelableExecute = cancelableExecuteField.GetMethod(value);
 
         var numberOfMembers = NumberOfNotNullFields(execute, canExecute, cancelableExecute);
 
@@ -17,17 +17,17 @@ class AsyncRelayCommandConverter :
         {
             if (execute is not null)
             {
-                writer.Serialize(execute.Method);
+                writer.Serialize(execute);
             }
 
             if (canExecute is not null)
             {
-                writer.Serialize(canExecute.Method);
+                writer.Serialize(canExecute);
             }
 
             if (cancelableExecute is not null)
             {
-                writer.Serialize(cancelableExecute.Method);
+                writer.Serialize(cancelableExecute);
             }
         }
         else
@@ -35,22 +35,22 @@ class AsyncRelayCommandConverter :
             writer.WriteStartObject();
             if (execute is not null)
             {
-                writer.WriteMember(value, execute.Method, "Execute");
+                writer.WriteMember(value, execute, "Execute");
             }
 
             if (canExecute is not null)
             {
-                writer.WriteMember(value, canExecute.Method, "CanExecute");
+                writer.WriteMember(value, canExecute, "CanExecute");
             }
 
             if (cancelableExecute is not null)
             {
-                writer.WriteMember(value, cancelableExecute.Method, "CancelableExecute");
+                writer.WriteMember(value, cancelableExecute, "CancelableExecute");
             }
 
             writer.WriteEndObject();
         }
     }
 
-    private static int NumberOfNotNullFields<T>(params T?[] span) => span.OfType<T>().Count();
+    private static int NumberOfNotNullFields(params MethodInfo?[] span) => span.OfType<MethodInfo>().Count();
 }

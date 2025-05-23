@@ -21,6 +21,12 @@ public static class VerifyCommunityToolkitMvvm
         });
     }
 
+    internal static MethodInfo? GetMethod(this FieldInfo field, object value)
+    {
+        var execute = (Delegate?) field.GetValue(value);
+        return execute?.Method;
+    }
+
     internal static FieldInfo GetInstanceField(this Type type, string name) => type
             .GetField(name, BindingFlags.Instance | BindingFlags.NonPublic)!;
 }
