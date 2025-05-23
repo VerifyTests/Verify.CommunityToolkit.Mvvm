@@ -17,7 +17,9 @@ public static class VerifyCommunityToolkitMvvm
         VerifierSettings.AddExtraSettings(_ =>
         {
             _.Converters.Add(new AsyncRelayCommandConverter());
+            _.Converters.Add(new AsyncRelayCommandInterfaceConverter());
             _.Converters.Add(new RelayCommandConverter());
+            _.Converters.Add(new RelayCommandInterfaceConverter());
         });
     }
 
