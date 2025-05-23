@@ -4,15 +4,12 @@ class AsyncRelayCommandConverter :
     public override void Write(VerifyJsonWriter writer, IAsyncRelayCommand value)
     {
         var type = value.GetType();
-        var executeField = type
-            .GetField("execute", BindingFlags.Instance | BindingFlags.NonPublic);
-        var canExecuteField = type
-            .GetField("canExecute", BindingFlags.Instance | BindingFlags.NonPublic);
-        var cancelableExecuteField = type
-            .GetField("cancelableExecute", BindingFlags.Instance | BindingFlags.NonPublic);
-        var execute = (Delegate?) executeField?.GetValue(value);
-        var canExecute = (Delegate?) canExecuteField?.GetValue(value);
-        var cancelableExecute = (Delegate?) cancelableExecuteField?.GetValue(value);
+        var executeField = type.GetInstanceField("execute");
+        var canExecuteField = type.GetInstanceField("canExecute");
+        var cancelableExecuteField = type.GetInstanceField("cancelableExecute");
+        var execute = (Delegate?) executeField.GetValue(value);
+        var canExecute = (Delegate?) canExecuteField.GetValue(value);
+        var cancelableExecute = (Delegate?) cancelableExecuteField.GetValue(value);
 
         var numberOfMembers = NumberOfNotNullFields(execute, canExecute, cancelableExecute);
 

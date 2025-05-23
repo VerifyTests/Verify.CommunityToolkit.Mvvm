@@ -4,10 +4,8 @@
     public override void Write(VerifyJsonWriter writer, IRelayCommand value)
     {
         var type = value.GetType();
-        var executeField = type
-            .GetField("execute", BindingFlags.Instance | BindingFlags.NonPublic)!;
-        var canExecuteField = type
-            .GetField("canExecute", BindingFlags.Instance | BindingFlags.NonPublic)!;
+        var executeField = type.GetInstanceField("execute");
+        var canExecuteField = type.GetInstanceField("canExecute");
         var execute = (Delegate) executeField.GetValue(value)!;
         var canExecute = (Delegate?) canExecuteField.GetValue(value);
         if (canExecute == null)
@@ -21,4 +19,5 @@
         writer.WriteMember(value, canExecute.Method, "CanExecute");
         writer.WriteEndObject();
     }
+
 }

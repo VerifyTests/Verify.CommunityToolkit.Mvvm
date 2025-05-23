@@ -20,4 +20,7 @@ public static class VerifyCommunityToolkitMvvm
             _.Converters.Add(new RelayCommandConverter());
         });
     }
+
+    internal static FieldInfo GetInstanceField(this Type type, string name) => type
+            .GetField(name, BindingFlags.Instance | BindingFlags.NonPublic)!;
 }
