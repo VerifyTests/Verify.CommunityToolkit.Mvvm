@@ -1,1 +1,1 @@
-﻿Tests.ActionMethodTokenAsync(string obj, CancellationToken token)
+﻿Tests.ActionMethodTokenAsync

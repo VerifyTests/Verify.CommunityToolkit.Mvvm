@@ -1,4 +1,4 @@
 ﻿{
-  Execute: Tests.ActionMethod(),
-  CanExecute: Tests.CanExecuteMethod()
+  Execute: Tests.ActionMethod,
+  CanExecute: Tests.CanExecuteMethod
 }

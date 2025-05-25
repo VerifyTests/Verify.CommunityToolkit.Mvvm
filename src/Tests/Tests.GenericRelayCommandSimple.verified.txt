@@ -1,1 +1,1 @@
-﻿Tests.ActionMethod(string obj)
+﻿Tests.ActionMethod

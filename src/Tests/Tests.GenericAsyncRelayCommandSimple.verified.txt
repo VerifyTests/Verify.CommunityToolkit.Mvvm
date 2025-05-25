@@ -1,1 +1,1 @@
-﻿Tests.ActionMethodAsync(string obj)
+﻿Tests.ActionMethodAsync
