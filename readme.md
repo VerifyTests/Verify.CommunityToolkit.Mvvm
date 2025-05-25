@@ -46,8 +46,8 @@ Results in:
 <a id='snippet-Tests.RelayCommand.verified.txt'></a>
 ```txt
 {
-  Execute: Tests.ActionMethod(),
-  CanExecute: Tests.CanExecuteMethod()
+  Execute: Tests.ActionMethod,
+  CanExecute: Tests.CanExecuteMethod
 }
 ```
 <sup><a href='/src/Tests/Tests.RelayCommand.verified.txt#L1-L4' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.RelayCommand.verified.txt' title='Start of snippet'>anchor</a></sup>
@@ -74,8 +74,8 @@ Results in:
 <a id='snippet-Tests.AsyncRelayCommand.verified.txt'></a>
 ```txt
 {
-  Execute: Tests.ActionMethodAsync(),
-  CanExecute: Tests.CanExecuteMethod()
+  Execute: Tests.ActionMethodAsync,
+  CanExecute: Tests.CanExecuteMethod
 }
 ```
 <sup><a href='/src/Tests/Tests.AsyncRelayCommand.verified.txt#L1-L4' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.AsyncRelayCommand.verified.txt' title='Start of snippet'>anchor</a></sup>

@@ -23,10 +23,22 @@ public static class VerifyCommunityToolkitMvvm
         });
     }
 
-    internal static MethodInfo? GetMethod(this FieldInfo field, object value)
+    internal static string? GetMethod(this FieldInfo field, object value)
     {
         var execute = (Delegate?) field.GetValue(value);
-        return execute?.Method;
+        if (execute == null)
+        {
+            return null;
+        }
+
+        var method = execute.Method;
+        var type = method.DeclaringType;
+        if (type != null)
+        {
+            return $"{type.FullName}.{method.Name}";
+        }
+
+        return method.Name;
     }
 
     internal static FieldInfo GetInstanceField(this Type type, string name) => type
