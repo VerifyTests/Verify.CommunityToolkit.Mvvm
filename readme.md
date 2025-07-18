@@ -4,7 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/sb66s1o8w1t9ba70?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-communitytoolkit-mvvm)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.CommunityToolkit.Mvvm.svg)](https://www.nuget.org/packages/Verify.CommunityToolkit.Mvvm/)
 
-Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [CommunityToolkit.Mvvm](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/).
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [CommunityToolkit.Mvvm](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/).<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
 
 
 ## Sponsors
@@ -12,9 +12,9 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 
 ### Entity Framework Extensions<!-- include: zzz. path: /docs/zzz.include.md -->
 
-[Entity Framework Extensions](https://entityframework-extensions.net/) is a major sponsor and is proud to contribute to the development this project.
+[Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.CommunityToolkit.Mvvm) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](docs/zzz.png)](https://entityframework-extensions.net)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.CommunityToolkit.Mvvm/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.CommunityToolkit.Mvvm)<!-- endInclude -->
 
 
 ## NuGet
