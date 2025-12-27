@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.CommunityToolkit.Mvvm
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://ci.appveyor.com/api/projects/status/sb66s1o8w1t9ba70?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-communitytoolkit-mvvm)
+[![Build status](https://img.shields.io/appveyor/build/SimonCropp/verify-communitytoolkit-mvvm)](https://ci.appveyor.com/project/SimonCropp/verify-communitytoolkit-mvvm)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.CommunityToolkit.Mvvm.svg)](https://www.nuget.org/packages/Verify.CommunityToolkit.Mvvm/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [CommunityToolkit.Mvvm](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/).<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
